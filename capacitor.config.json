@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "Agricultores",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

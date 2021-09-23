@@ -1,0 +1,5 @@
+LIBRARY	LIBDVDCPXM
+
+EXPORTS
+	dvdcpxm_init
+	dvdcpxm_decrypt

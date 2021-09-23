@@ -1,0 +1,7 @@
+{
+  "name": "Agricultores",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
