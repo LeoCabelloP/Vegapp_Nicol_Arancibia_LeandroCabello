@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/inicio"
         text="Atrás"
-        color="success"
+        color="light"
         mode="ios">
       </ion-back-button>
     </ion-buttons>
@@ -30,7 +30,7 @@
   
 
 
-  <!--Combito-->
+  <!--Combito regiones-->
   <ion-item>
     <ion-label>Región</ion-label>
     <ion-select class="form" placeholder="Seleccione" required>
@@ -50,10 +50,6 @@
       <ion-select-option value="f">Los Lagos</ion-select-option>
       <ion-select-option value="f">Aysén del General Carlos Ibáñez del Campo</ion-select-option>
       <ion-select-option value="f">Magallanes y la Antártica Chilena</ion-select-option>
-
-
-
-
     </ion-select>
   </ion-item>
 
@@ -80,12 +76,18 @@
       </ion-input>
     </ion-item>
 
+    <!--Botoncito enviar, no se activa si el usuario no ingresa bien la info-->
+      
     <ion-button [disabled] ="formulario.invalid"
     type="submit" expand="block" routerLink="/inicio">
     Enviar Datos
     </ion-button>
 
   </form>
+
+  <ion-card class="cardbottom">
+    <ion-img src="/assets/logo.png"></ion-img> 
+  </ion-card>  
   
 
 </ion-content>

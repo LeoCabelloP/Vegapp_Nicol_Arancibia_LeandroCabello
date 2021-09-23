@@ -1,5 +1,5 @@
-<ion-header class="ion-padding">
-  <ion-toolbar>
+<ion-header >
+  <ion-toolbar color="primary">
     <ion-buttons slot="start">
       <ion-button (click)="mostrarMenu()">
         <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
@@ -9,7 +9,7 @@
 
     <ion-buttons slot="end">
       <ion-avatar>
-         <ion-img src="/assets/logo.png"></ion-img>
+         <ion-img src="/assets/avatar.jpg"></ion-img>
       </ion-avatar>
     </ion-buttons>
     <ion-title>Inicio</ion-title>
@@ -27,5 +27,13 @@
             color="primary"></ion-icon> 
             {{c.name}}
       </ion-item>
-   </ion-list>    
+   </ion-list>
+   
+   <ion-card class="cardbottom">
+    <ion-img src="/assets/logo.png"></ion-img> 
+   </ion-card>  
+
+   
+
+
 </ion-content>

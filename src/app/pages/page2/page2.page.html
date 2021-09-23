@@ -1,51 +1,50 @@
 <ion-header>
-      <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-back-button defaultHref="/"
-                text="Atrás"
-                color="success"
-                mode="ios">
-              </ion-back-button>
-            </ion-buttons>
-          <ion-title>Descripción</ion-title>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/"
+            text="Atrás"
+            color="light"
+            mode="ios">
+          </ion-back-button>
+        </ion-buttons>
+      <ion-title>Catálogo</ion-title>
 
-              <ion-buttons slot="end">
-                <ion-avatar>
-                  <ion-img src="assets/logo.png" ></ion-img>
-                </ion-avatar>
-              </ion-buttons>
-  
-            </ion-toolbar>
-          </ion-header>
-          
-          <ion-content class="ion-padding">
-          
-            <ion-card>
-              <ion-card-header>
-                <ion-card-subtitle class="subtitulo">Ver</ion-card-subtitle>
-                <ion-card-title class="titulo">Mis productos</ion-card-title>
-              </ion-card-header>
-          
-              
-              <ion-img src="/assets/logo.png"></ion-img><br>    
-          
-            </ion-card>
-              <ion-content>
-                <ion-grid>
-                  <ion-row> 
-                    <ion-col size="6" *ngFor="let imagen of imagenes">
-                      
-                        <img src="{{imagen}}" alt="" srcset="">
-                     
-              
-                    </ion-col>
-                  </ion-row>
-                </ion-grid> 
-                
-          
-          
-              
-          </ion-content>
+    <ion-buttons slot="end">
+      <ion-avatar>
+        <ion-img src="assets/avatar.jpg" ></ion-img>
+      </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+      
+<ion-content >
+
+  <ion-searchbar placeholder="Buscar producto"></ion-searchbar>
+      
+  <ion-card>
+    <ion-card-header>
             
-          
-    </ion-content>
+      <ion-img src="/assets/logo.png"></ion-img>
+      
+    </ion-card-header>       
+      
+  </ion-card>
+
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let imagen of imagenes">
+        <img src="{{imagen}}" alt="" srcset="">
+      </ion-col>
+    </ion-row>
+  </ion-grid>   
+
+  <ion-card class="icard">
+    <ion-card-content>
+      <h6 class="text">En esta App podrás vender los productos que produces a mejor precio. <br><br>
+        Para agregar un producto debes presionar en Nuevo Producto.<br><br>
+        ¡Para comprar puedes usar el buscador y encontrar lo que buscas!</h6>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

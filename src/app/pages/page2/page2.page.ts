@@ -10,8 +10,6 @@ import { Component, OnInit } from '@angular/core';
 
 export class Page2Page implements OnInit {
 
-  img:string;
-
   constructor() { }
 
   ngOnInit() {
